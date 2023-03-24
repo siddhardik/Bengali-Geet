@@ -1,0 +1,236 @@
+@media (max-width: 800px) {
+
+    /* animated favourites text will be hidden for this viewport width*/
+    .viewMore {
+        display: block;
+    }
+
+    aside {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    /* header media query --------------------- */
+    .app-identity img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .app-name {
+        font-size: 15px;
+    }
+
+    #favourites {
+        font-size: 8px;
+        border: solid 1px #084035;
+        padding: 5px 8px;
+        border-radius: 3px;
+        opacity: 0.9;
+    }
+
+    /* seARCH BAR */
+    .search-box {
+        height: 20px;
+        width: 25vw;
+        border-radius: 7px;
+    }
+
+    #input {
+        width: 80px;
+        height: 20px;
+    }
+
+    #search-icon:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    /* Profile image */
+    .image {
+        height: 30px;
+        width: 30px;
+    }
+
+    /* Main area responsive ------------------------------ */
+    .band-info-section {
+        background-color: var(--FgBlue);
+        height: 30vw;
+    }
+
+    #band-img {
+        height: 35vw;
+        width: 35vw;
+    }
+
+    /* band about section */
+    .band-text-container {
+        margin: 4vw 3% 0% 3%;
+    }
+
+    #name-style p {
+        font-size: 1vw;
+    }
+
+    #name-style h4 {
+        font-size: 2vw;
+    }
+
+    .band-text-container .para p {
+        font-size: 1vw;
+        line-height: 1.8vw;
+    }
+
+    .play-follow button {
+        font-size: 1.3vw;
+        width: 10.5vw;
+        height: 3vw;
+    }
+
+    /* follow word */
+    .play-follow div {
+        font-size: 1.5vw;
+    }
+
+    .track-count {
+        font-size: 1vw;
+    }
+
+    /* song list responsive */
+    main .single-song-container {
+        height: 7.5vw;
+    }
+
+    /* song count */
+    .single-song-container .num {
+        font-size: 1.2vw;
+    }
+
+    /* song cover image */
+    .single-song-container .song-cover {
+        width: 5.5vw;
+        height: 5.5vw;
+    }
+
+    main .single-song-container h4 {
+        font-size: 1.6vw;
+        margin-top: 1vw;
+    }
+
+    main .single-song-container p {
+        font-size: 1.1vw;
+        margin-top: 3px;
+    }
+
+    /* increasing size of icon */
+    .icon .material-symbols-outlined {
+        font-size: 2.3vw;
+
+    }
+
+    /* dropdown recently played */
+    .recent-song-container .song-name p {
+        font-size: 0.8vw;
+        margin-top: 2px;
+      }
+
+      .recent-song-container .song-name h4 {
+        font-size: 1vw;
+      }
+
+    /* footer section------------------------ */
+
+    /* changing space-between from space-around */
+    footer {
+        justify-content: space-between;
+    }
+
+    /* increase width of left part of footer and adding left margin */
+    footer .left-container {
+        width: 25%;
+        margin-left: 10px;
+    }
+
+    /* removing heart icon */
+    footer .foot-favIcon {
+        display: none;
+    }
+
+    /* changing overflow style to ellipse*/
+    .foot-songName h6 {
+        font-size: 15px;
+        text-overflow: ellipsis;
+    }
+
+    /* middle part of footer width increase */
+    footer .middle-container {
+        width: 38%;
+    }
+
+    /* RIGHT part of footer width increase and right margin added */
+    footer .right-container {
+
+        width: 25%;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width:500px) {
+
+
+
+    /* footer media query --------------------- */
+    .foot-image img {
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    .middle-container .music-control {
+        height: 70%;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* song name and image size change*/
+
+    .foot-image img {
+        height: 45px;
+        width: 45px;
+        margin-right: 10px;
+    }
+
+    .foot-songName h6 {
+        font-size: 10px;
+        text-overflow: ellipsis;
+    }
+
+    footer .foot-songName p {
+        font-size: 7px;
+        margin-top: -10px;
+    }
+
+    /* size adjustment of footer containers */
+    footer .left-container {
+        width: 30%;
+    }
+
+    footer .middle-container {
+        width: 40%;
+    }
+
+    footer .right-container {
+        width: 25%;
+    }
+
+    /* removing icon from footer */
+    #queue_music,
+    #lyrics,
+    #zoom_out_map {
+        display: none;
+    }
+}

@@ -1,0 +1,889 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: var(--BgBlue);
+    /* min-width: 300px; */
+    
+}
+
+:root {
+
+/* blue */
+    --BgBlue: #04101f;
+    --FgBlue: #082140;
+    --MateBlue: #122133;
+    
+}
+
+/* header design --------------------------------------------*/
+
+header {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: var(--BgBlue);
+    padding: 0 3%;
+    position: sticky;
+    top:0px;
+    z-index: 10;
+}
+
+#name1 {
+    font-weight: 300;
+}
+
+#name2 {
+    font-weight: 700;
+    color: aquamarine;
+}
+
+/* Left-side of header */
+/* ---------------------------------------------------------------- */
+
+
+.left-contain {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.app-identity {
+    display: flex;
+    align-items: center;
+}
+
+.app-identity img {
+    height: 4vw;
+    width: 4vw;
+    margin-right: 10px;
+    margin-top:5px;
+
+    animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+.app-name {
+    color:white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3vw;
+    animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+#favourites {
+    color:white;
+    margin-left: 15%;
+    font-family: 'Lato', sans-serif;
+    font-weight:700;
+    font-size: 0.9vw;
+    border: solid 1px #084035;
+    padding: 5px 20px;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+#favourites:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Right-side of header */
+/* ---------------------------------------------------------------- */
+
+.right-contain {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 2%;
+}
+
+#search-icon:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.search-box{
+    height: 25px;
+    width: 35vw;
+    border-radius: 10px;
+    background-color: var(--FgBlue);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 3px;
+}
+
+#mic:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    opacity: 1;
+    color:rgb(255, 104, 104);
+}
+
+.search-box span {
+    color:white; 
+    opacity: 0.8;
+    margin-top: 3px;
+}
+
+
+#input {
+    width: 80%;
+    height: 80%;
+    
+}
+
+#input input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--FgBlue);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size:smaller;
+}
+
+/* Mic icon */
+.search-box .material-symbols-outlined {
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+/* Notification icon size*/
+.right-contain .material-symbols-outlined {
+
+    opacity: 0.7;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 1000,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+/* Notification icon */
+.right-contain > span {
+    color:white;
+    margin: 0 5%;
+    font-size: 18px;
+}
+/* Notification icon hover */
+#notification:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+/* Profile image */
+.image {
+    height: 4vw;
+    width: 4vw;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* ******************************************************************** */
+/* Container Start*/
+/* ---------------------------------------------------------------- */
+
+.container {
+    /* background-color: rgb(255, 127, 127); */
+    box-sizing: border-box;
+    height: auto;
+    width: auto;
+    margin: 2% 10% 0 10%;
+    display: flex;
+}
+
+/* ******************************************************************** */
+/* Main Content Area Start */
+/* ---------------------------------------------------------------- */
+
+main {
+    /* background-color: orange; */
+    height: 90vh;
+    width: 70%;
+    margin-right: 1%;
+    overflow: scroll;
+    
+}
+
+/* Band information Banner ------------------------------------------------ */
+
+/* band info section */
+.band-info-section {
+    background-color: var(--FgBlue);
+    height: 17vw;
+    width: 100%;
+    display: flex;
+
+    overflow: hidden;
+    
+}
+
+/* image div */
+#band-img {
+    height: 18.5vw;
+    width: 18.5vw;
+    background-size: 100%;
+    background-image: linear-gradient( to bottom, transparent,
+     rgba(20, 65, 56, 1) ), url(media/homePage/artist/park.jpg);
+}
+
+/* band about section */
+.band-text-container {
+    /* border: 1px solid red; */
+    width: 65%;
+    height: 75%;
+    margin: 2vw 3%  0% 3%;
+    color:white;
+
+}
+
+/* band name and followers container*/
+.name-follower{
+    height: 25%;
+    width: 100%;
+    display: flex;
+}
+
+#name-style{
+    height: 100%;
+    width: 50%;
+}
+
+#name-style p{
+    margin-top: 3px;
+    font-size: 0.8vw;
+    opacity: 0.;
+}
+
+#name-style h4{
+    font-size: 1.3vw;
+}
+/* follower count */
+#follower-count {
+    height: 100%;
+    width: 50%;
+    text-align:right;
+    font-size: 0.8vw;
+    margin-top:2%;
+    margin-right: 2px;
+}
+
+.band-text-container .para p {
+    font-size: 0.77vw;
+    line-height: 1.4vw;
+    font-weight: 400;
+}
+
+/* Play an follow */
+.play-follow{
+    margin-top: 5%;
+    width: 40%;
+    height: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.play-follow button {
+    color:white;
+    font-size: 0.85vw;
+    width: 6.5vw;
+    height: 2vw;
+    border-radius: 2px;
+    border: none;
+    background-image: linear-gradient(to right, rgb(170, 0, 255) , rgb(255, 0, 170));
+}
+
+.play-follow button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* follow word */
+.play-follow div {
+    font-size: 0.9vw;
+    font-weight: 400;
+}
+
+.play-follow div:hover {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.track-count  {
+    font-size: 0.65vw;
+    margin-top: 0.5vw;
+}
+
+
+/* Band song list section ----------------------------------- */
+
+.band-song-list {
+    margin-top: 2%;
+    height: auto;
+    width:100%;
+    color:white;
+}
+
+/* Container for song row */
+main .single-song-container {
+    display: flex;
+    width:100%;
+    height: 4.5vw;
+    margin-top: 1vw;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--MateBlue);
+}
+
+/* song count */
+.single-song-container .num {
+    width: 2%;
+    text-align: center;
+    font-size: 0.8vw;
+}
+
+/* song cover image */
+.single-song-container .song-cover {
+    width:3.5vw;
+    height:3.5vw;
+}
+
+.single-song-container img{
+    width:100%;
+    height:100%;
+}
+
+/* song  title and singer name */
+.single-song-container .song-name {
+    width:70%;
+    height:80%;
+}
+
+.single-song-container h4{
+    font-size: 0.9vw;
+    margin-top:0.7vw;
+}
+
+.single-song-container p{
+    font-size: 0.7vw;
+    margin-top:2px;
+}
+
+/* icon */
+.single-song-container .icon {
+    width:15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* reducing size of icon */
+.icon .material-symbols-outlined{
+    font-size: 1.5vw;
+    opacity: 0.7;
+}
+
+.band-song-list .single-song-container:hover {
+    cursor: pointer;
+    background-color: var(--FgBlue);
+}
+
+/* ******************************************************************** */
+/* Main Content Area end */
+/* ---------------------------------------------------------------- */
+
+/* ******************************************************************** */
+/* Side Bar Start*/
+/* ---------------------------------------------------------------- */
+
+aside {
+    /* background-color: orange; */
+    color:white;
+    height: 90vh;
+    width: 22vw;
+    margin-left: 5px;
+
+    overflow: scroll;
+}
+
+/* ************************************************************* */
+/* similar artist container-----------------*/
+.similar-artists-contain {
+    height: auto;
+    width: 100%;
+
+    /* white-space: nowrap;
+    overflow: scroll; */
+}
+
+
+.similar-artists-contain .name-follower{
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* "Similar Artists" and "Recently Played" text size */
+.name-follower .name-style h2{
+    font-size: 1.4vw;
+}
+
+/* view all text style , in this case view all text*/
+aside section #follower-count{
+    font-size: 0.8vw;
+    font-weight: 600;
+}
+
+/* similar song list modification of original */
+.similar-artists-contain .single-song-container {
+    height:auto;
+    position: relative;
+    margin-top: 1.5vw;
+
+    display: flex;
+    width:100%;
+    height: 4.5vw;
+    margin-top: 1vw;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+/* song image */
+.similar-artists-contain .song-cover {
+    width:4.5vw;
+    height:4.5vw;
+    margin-right: 10px;
+}
+
+.similar-artists-contain .single-song-container img{
+    width:4.5vw;
+    height:4.5vw;
+}
+
+/* song and singer name */
+
+aside .single-song-container h4{
+    font-size: 0.8vw;
+    margin: 0;
+}
+
+/* icon style */
+
+.icon-time .material-symbols-outlined{ 
+    font-size: 1vw;
+    
+}
+
+aside .icon-time{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+#duration {
+    font-size: 0.6vw;
+}
+
+
+
+.single-song-container .icon-time{
+    position: absolute;
+    top:0px;
+    right: 28px;
+}
+
+
+.similar-artists-contain .single-song-container:hover {
+    cursor: pointer;
+    background-color:#062b23
+}
+
+
+/* ***************************************************** */
+/* recently played container-----------------*/
+.recently-played-contain {
+    margin-top: 8%;
+    height: 70vh;
+    width:100%;
+}
+
+.recently-played-contain .name-follower{
+    height: auto; 
+}
+
+.recent-song-container {
+    margin-top: 1.5vw;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    
+    background-color: transparent;
+    position: relative;
+}
+
+.recent-song-container .num {
+    font-size: 0.7vw;
+    margin-right: 10px;
+}
+
+.recent-song-container .song-name h4 {
+    font-size: 0.8vw;
+}
+
+.recent-song-container .song-name p {
+    font-size: 0.6vw;
+    margin-top: 5px;
+    
+}
+
+.recent-song-container img {
+    width:4vw;
+    height:4vw;
+    margin-right: 10px;
+}
+
+.recent-song-container .icon {
+    position: absolute;
+    right: 15px;
+}
+
+.recently-played-contain .icon .material-symbols-outlined{
+    font-size: 1vw; 
+}
+
+/* dropdown part */
+.viewMore .icon .material-symbols-outlined{
+    font-size: 1vw; 
+}
+
+/* Singer name light color */
+.recent-song-container p {
+    opacity: 0.6;
+}
+
+.recently-played-contain .recent-song-container:hover {
+    cursor: pointer;
+    background-color:#062b23
+}
+
+
+/* ******************************************************************** */
+/* footer Bar Start*/
+/* ---------------------------------------------------------------- */
+
+footer {
+    height: 65px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1e2926;
+    color: white;
+
+    z-index: 5;
+}
+
+
+footer .left-container {
+    height: 75%;
+    width: 18%;
+    display: flex;
+}
+
+footer .middle-container {
+    height: 75%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .right-container {
+    height: 75%;
+    width:20%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ----------------------------------------------------------- */
+/* footer left side content */
+
+/* song cover image */
+.foot-image img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+/* song and singer name container */
+.foot-songName {
+    height: 100%;
+    width: calc(100% - 25% - 25%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 4px 0;
+}
+
+/* song name */ 
+.foot-songName h6 {
+    font-size: 15px;
+    font-weight: 500;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+/* singer name */
+footer .foot-songName p{
+    font-size: 10px;
+    font-weight: 400;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    opacity: 0.7;
+}
+
+/* favourite icon container */
+footer .foot-favIcon {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+
+    margin-left: 10px;
+}
+
+/* icon size */
+.foot-favIcon .material-symbols-outlined {
+    font-size: 110%;
+    padding: 0 5px;
+    margin-top: 8%;
+    opacity: 0.7;
+}
+
+/* ---------------------------------------------------- */
+/* footer middle side content */
+
+/* music controls container*/
+.middle-container .music-control {
+    height: 70%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* icon style music control */
+
+/* next previous style */
+.music-control .material-symbols-outlined.nextPrev {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/* reduce icon size of music control */
+.reduce-icon-size {
+    font-size: 110%;
+}
+
+/* increase size of pause button */
+.increase-icon-size {
+    font-size: 200%;
+}
+
+
+/* slider and duration time style container*/
+.middle-container .duration-slider {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* duration font size */ 
+.duration-slider p {
+    font-size: 70%;
+    opacity: 0.7;
+    padding-bottom: 3px;
+}
+
+/* slider container */
+.slidecontainer{
+    width: 85%;
+}
+
+.slidecontainer input[type="range"] {
+    width: 100%;
+    opacity: 0.8;
+}
+
+
+/* footer right side content */
+
+.right-container .slidecontainer-volume { 
+    width: 40%;
+}
+
+.right-container .slidecontainer-volume input {
+    width: 100%;
+}
+
+/* Footer ends here------------------------------------------- */
+/* ****************************************************** */
+
+
+/* View More button when screen size reduce */
+.viewMore {
+    height: 45px;
+    width: 40px;
+
+    background-color: var(--FgBlue);
+    color: white;
+
+    position: fixed;
+    right: 0;
+    top: 100px;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
+
+    display: none;
+}
+
+/* expand symbol---- */
+#expand-button {
+    font-size: 40px;
+    position: fixed;
+    right: 2px;
+    top: 102px;
+}
+
+/* backround will hidden when hover */
+.viewMore:hover{
+    background-color: var(--BgBlue)
+}
+
+#expand-button:hover{
+    cursor: pointer;
+    color: rgb(255, 166, 0)
+}
+
+/* queue sidebar will showup */
+.viewMore:hover .viewMore-dropdown-container{
+    display: block;
+}
+
+/* DROPDOWN menu container style */
+.viewMore-dropdown-container {
+   
+    position: fixed;
+    right: 0;
+    top: 140px;
+
+    background-color: var(--FgBlue);
+    min-width: 25vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    border-radius: 5px;
+    color: white;
+    right: 0;
+    z-index: 10;
+
+    display: none;
+
+    overflow: scroll;
+}
+
+/* list item->queue */
+.viewMore-dropdown-container li{
+    list-style: none;
+    padding: 5px 0px 5px 5px;
+    border:1px solid var(--BgBlue);
+    font-size: 3vw;
+    background-color: var(--listBackC);
+    
+}
+
+.viewMore-dropdown-container li:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/* styling chane for similar artist inside dropdown */
+
+.viewMore .single-song-container {
+    height:auto;
+    position: relative;
+    /* margin-top: 1vw; */
+    display: flex;
+    width:100%;
+    height: 4.5vw;
+
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+/* adjusting size of song durationa and more option icon */
+.viewMore .single-song-container .icon-time {
+    position: absolute;
+    top: -11px;
+    right: 35px;
+}
+
+/* Recently Played song dropdown design adjustment */
+
+.viewMore .recent-song-container {
+    
+    margin-top: 0;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    
+    background-color: transparent;
+    position: relative;
+}
+
+.viewMore .icon .material-symbols-outlined{
+    font-size: 1vw; 
+}
+
+.viewMore h6 {
+    background-color: rgb(255, 166, 0);
+    color: var(--listBackC);
+    padding: 4px;
+}
+
+
+

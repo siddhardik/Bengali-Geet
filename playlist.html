@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Font Style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Material icons-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+  <link rel="stylesheet" href="playlist.css" />
+  <!-- animation css -->
+  <link rel="stylesheet" href="animation.css" />
+
+  <link rel="stylesheet" href="playlistPageResponsive.css" />
+
+  <title>Playlist Page</title>
+</head>
+
+<body>
+
+  <!-- Header part -->
+  <header>
+
+    <!-- left side of header -->
+    <div class="left-contain">
+
+      <!-- logo and name -->
+      <div class="app-identity">
+        <div><img src="media/web_logo.jpg"></div>
+        <div class="app-name">
+          <div id = "name1"> Bengali </div>
+          <div id = "name2"> Geet </div>
+        </div>
+      </div>
+
+      <!-- Favourite tab -->
+      <div id="favourites">Favourites</div>
+
+    </div>
+
+    <!-- Right side of header -->
+    <div class="right-contain">
+
+      <!-- search bar -->
+      <div class="search-box">
+        <div><span id="search-icon" class="material-symbols-outlined">search</span></div>
+
+        <div id="input">
+          <input type="text" placeholder="Search">
+        </div>
+
+        <div><span id="mic" class="material-symbols-outlined">mic</span></div>
+      </div>
+
+      <!-- bell icon -->
+      <span id="notification" class="material-symbols-outlined">notifications</span>
+
+      <!-- profile pic -->
+      <div class="image"><img
+          src="https://1fid.com/wp-content/uploads/2022/07/boy-anime-wallpaper-image-for-profile-pic-81.jpg"></div>
+
+    </div>
+
+  </header>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Main content area -->
+    <main>
+
+      <!-- Band information banner ------------>
+      <section class="band-info-section">
+
+        <!--Band image-->
+        <div id="band-img"></div>
+
+        <!--about the band text-->
+        <div class="band-text-container">
+
+          <!--band name and followers-->
+          <div class="name-follower">
+
+            <!--band name -->
+            <div id="name-style">
+              <h4>Linkin Park</h4>
+              <p>American Band</p>
+            </div>
+
+            <!--band followers-->
+            <div id="follower-count">
+              <p>818k Followers</p>
+            </div>
+
+          </div>
+
+          <!--paragraph-->
+          <div class="para">
+            <p>Linkin Park is an American pop rock band from Las Vegas,
+              Nevada. Its members are its lead singer Dan Reynolds, guitarist
+              Wayne Sermon, bassist Ben McKee, and drummer Daniel Platzman. The band first gained exposure with the
+              release of their
+              single "It's Time", followed by studio album Night Visions.</p>
+
+          </div>
+
+          <!--play and follow-->
+          <div class="play-follow">
+            <button>Play All</button>
+            <div><span>Follow</span></div>
+          </div>
+
+          <!--track count-->
+          <div class="track-count">
+            290 Tracks | 98 Albums
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Band song list section------------->
+      <section class="band-song-list">
+
+        <!-- first song row container template-->
+        <div class="single-song-container">
+
+          <div class="num">01</div>
+          <div class="song-cover"><img src="media/famyAva.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Famy Ava</h4>
+            <p>Ava</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+
+            <span class="material-symbols-outlined">add
+            </span>
+          </div>
+
+        </div>
+
+        <!-- 2nd song row container template-->
+        <div class="single-song-container">
+
+          <div class="num">02</div>
+          <div class="song-cover"><img src="media/believer.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Sia Unstopable</h4>
+            <p>Sia</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+
+            <span class="material-symbols-outlined">add
+            </span>
+          </div>
+
+        </div>
+
+        <!-- 3rd song row container template-->
+        <div class="single-song-container">
+
+          <div class="num">03</div>
+          <div class="song-cover"><img src="media/bones.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Enemy</h4>
+            <p>JID</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+
+            <span class="material-symbols-outlined">add
+            </span>
+          </div>
+
+        </div>
+
+        <!-- 4th song row container template-->
+        <div class="single-song-container">
+
+          <div class="num">04</div>
+          <div class="song-cover"><img src="media/demons.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Demons</h4>
+            <p>Andrew</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+
+            <span class="material-symbols-outlined">add
+            </span>
+          </div>
+
+        </div>
+
+        <!-- 5th song row container template-->
+        <div class="single-song-container">
+
+          <div class="num">05</div>
+          <div class="song-cover"><img src="media/believer.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Thunder</h4>
+            <p>Evolve</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+
+            <span class="material-symbols-outlined">add
+            </span>
+          </div>
+
+        </div>
+
+        <!-- 6th song row container template-->
+        <div class="single-song-container">
+
+          <div class="num">06</div>
+          <div class="song-cover"><img src="media/radio.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Radioactive</h4>
+            <p>Dave Lemke</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+
+            <span class="material-symbols-outlined">add
+            </span>
+          </div>
+
+        </div>
+
+        <!-- 7th song row container template-->
+        <div class="single-song-container">
+
+          <div class="num">07</div>
+          <div class="song-cover"><img src="media/bad.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Natural</h4>
+            <p>Andrew</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+
+            <span class="material-symbols-outlined">add
+            </span>
+          </div>
+
+        </div>
+
+        <!-- 8th song row container template-->
+        <div class="single-song-container">
+
+          <div class="num">08</div>
+          <div class="song-cover"><img src="media/believer.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Whatever It Takes</h4>
+            <p>Dan Reynolds</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+
+            <span class="material-symbols-outlined">add
+            </span>
+          </div>
+
+        </div>
+
+        <!-- 9th song row container template-->
+        <div class="single-song-container">
+
+          <div class="num">09</div>
+          <div class="song-cover"><img src="media/bones.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Sharks</h4>
+            <p>Evolve</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+
+            <span class="material-symbols-outlined">add
+            </span>
+          </div>
+
+        </div>
+
+        <!-- 10th song row container template-->
+        <div class="single-song-container">
+
+          <div class="num">10</div>
+          <div class="song-cover"><img src="media/bad.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Bad Liar</h4>
+            <p>Dan Reynolds</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+
+            <span class="material-symbols-outlined">add
+            </span>
+          </div>
+
+        </div>
+
+
+        <!-- 11 song row container template-->
+        <div class="single-song-container">
+
+          <div class="num">11</div>
+          <div class="song-cover"><img src="media/bones.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Bones</h4>
+            <p>Dan Reynolds</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+
+            <span class="material-symbols-outlined">add
+            </span>
+          </div>
+
+        </div>
+
+        <!-- 12 song row container template-->
+        <div class="single-song-container">
+
+          <div class="num">12</div>
+          <div class="song-cover"><img src="media/believer.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Believer</h4>
+            <p>Dan Reynolds</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+
+            <span class="material-symbols-outlined">add
+            </span>
+          </div>
+
+        </div>
+
+        <!-- 13 song row container template-->
+        <div class="single-song-container">
+
+          <div class="num">13</div>
+          <div class="song-cover"><img src="media/bones.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Enemy</h4>
+            <p>JID</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+
+            <span class="material-symbols-outlined">add
+            </span>
+          </div>
+
+        </div>
+
+        <!-- 14th song row container template-->
+        <div class="single-song-container">
+
+          <div class="num">14</div>
+          <div class="song-cover"><img src="media/demons.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Demons</h4>
+            <p>Andrew</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+
+            <span class="material-symbols-outlined">add
+            </span>
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Sidebar -->
+    <aside>
+
+      <!-- sidebar top container -->
+      <section class="similar-artists-contain">
+
+        <!-- this part is taken from text container -->
+        <!-- 1st sidebar heading -->
+        <div class="name-follower">
+
+          <!-- similar artist -->
+          <div class="name-style">
+            <h2>Similar Artists</h2>
+          </div>
+
+          <!--View All text-->
+          <div id="follower-count">
+            <p>View All</p>
+          </div>
+
+        </div>
+
+        <!-- Song list -->
+        <div class="single-song-container">
+
+          <div class="song-cover"><img src="media/republic.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>OneRepublic</h4>
+            <p>Pop Rock</p>
+          </div>
+
+          <div class="icon-time">
+            <div><span class="material-symbols-outlined">
+                more_horiz
+              </span></div>
+
+            <div id="duration">4:44</div>
+          </div>
+
+        </div>
+
+        <!-- *********************** -->
+
+        <div class="single-song-container">
+
+          <div class="song-cover"><img src="media/american.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>American Authors</h4>
+            <p>Indie Rock</p>
+          </div>
+
+          <div class="icon-time">
+            <div><span class="material-symbols-outlined">
+                more_horiz
+              </span></div>
+
+            <div id="duration">4:44</div>
+          </div>
+
+        </div>
+
+        <!-- *********************** -->
+        <div class="single-song-container">
+
+          <div class="song-cover"><img src="media/coldplay.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Coldplay</h4>
+            <p>Rock</p>
+          </div>
+
+          <div class="icon-time">
+            <div><span class="material-symbols-outlined">
+                more_horiz
+              </span></div>
+
+            <div id="duration">4:44</div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- side bar lower ----------------------------------->
+      <section class="recently-played-contain">
+        <!-- this part is taken from text container -->
+        <div class="name-follower">
+
+          <!-- similar artist -->
+          <div class="name-style">
+            <h2>Recently Played</h2>
+          </div>
+
+          <!--View All text-->
+          <div id="follower-count">
+            <p>View All</p>
+          </div>
+
+        </div>
+
+        <!-- Song list -->
+        <!-- 1st song -->
+        <div class="recent-song-container">
+
+          <div class="num">01</div>
+          <img src="media/mocking.jpg" alt="">
+
+          <div class="song-name">
+            <h4>Mockingbird</h4>
+            <p>Eminem</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+          </div>
+
+        </div>
+
+        <!-- 2nd song -->
+        <div class="recent-song-container">
+
+          <div class="num">02</div>
+          <div class="song-cover"><img src="media/dance.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Dance Monkey</h4>
+            <p>Tones And I</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+          </div>
+
+        </div>
+
+        <!-- 3rd song -->
+        <div class="recent-song-container">
+
+          <div class="num">03</div>
+          <div class="song-cover"><img src="media/lovely.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Lovely</h4>
+            <p>Khalid</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+          </div>
+
+        </div>
+        <!-- 4th song -->
+        <div class="recent-song-container">
+
+          <div class="num">04</div>
+          <div class="song-cover"><img src="media/bones.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Bones</h4>
+            <p>Dan Reynolds</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+          </div>
+
+        </div>
+        <!-- 5th song -->
+        <div class="recent-song-container">
+
+          <div class="num">05</div>
+          <div class="song-cover"><img src="media/sunflower.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Sunflower</h4>
+            <p>Post Malone</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+          </div>
+
+        </div>
+        <!-- 6th song -->
+        <div class="recent-song-container">
+
+          <div class="num">06</div>
+          <div class="song-cover"><img src="media/attention.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Attention</h4>
+            <p>Charlie Puth</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+          </div>
+
+        </div>
+
+
+      </section>
+
+    </aside>
+
+    <!-- ******************************************** -->
+    <!-- View more button when screen size reduced ---------------------------------->
+    <div class="viewMore">
+
+      <span id="expand-button" class="material-symbols-outlined">more</span>
+      <!-- Conatainer for aside section media query-->
+      <div class="viewMore-dropdown-container">
+
+        <ul>
+          <h6>Similar artist</h6>
+          <li>
+            <div class="single-song-container">
+
+              <div class="song-cover"><img src="media/republic.jpg" alt=""></div>
+
+              <div class="song-name">
+                <h4>OneRepublic</h4>
+                <p>Pop Rock</p>
+              </div>
+
+              <div class="icon-time">
+                <div><span class="material-symbols-outlined">
+                    more_horiz
+                  </span></div>
+
+                <div id="duration">4:44</div>
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="single-song-container">
+
+              <div class="song-cover"><img src="media/american.jpg" alt=""></div>
+
+              <div class="song-name">
+                <h4>American Authors</h4>
+                <p>Indie Rock</p>
+              </div>
+
+              <div class="icon-time">
+                <div><span class="material-symbols-outlined">
+                    more_horiz
+                  </span></div>
+
+                <div id="duration">4:44</div>
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="single-song-container">
+
+              <div class="song-cover"><img src="media/coldplay.jpg" alt=""></div>
+
+              <div class="song-name">
+                <h4>Coldplay</h4>
+                <p>Rock</p>
+              </div>
+
+              <div class="icon-time">
+                <div><span class="material-symbols-outlined">
+                    more_horiz
+                  </span></div>
+
+                <div id="duration">4:44</div>
+              </div>
+
+            </div>
+          </li>
+
+          <h6>Recently Played</h6>
+
+          <li>
+            <div class="recent-song-container">
+
+              <div class="num">01</div>
+              <img src="media/mocking.jpg" alt="">
+    
+              <div class="song-name">
+                <h4>Mockingbird</h4>
+                <p>Eminem</p>
+              </div>
+    
+              <div class="icon">
+                <span class="material-symbols-outlined">favorite
+                </span>
+              </div>
+    
+            </div>
+          </li>
+
+          <li>
+            <!-- 2nd song -->
+        <div class="recent-song-container">
+
+          <div class="num">02</div>
+          <div class="song-cover"><img src="media/dance.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Dance Monkey</h4>
+            <p>Tones And I</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+          </div>
+
+        </div>
+          </li>
+
+          <li>
+<!-- 3rd song -->
+<div class="recent-song-container">
+
+  <div class="num">03</div>
+  <div class="song-cover"><img src="media/lovely.jpg" alt=""></div>
+
+  <div class="song-name">
+    <h4>Lovely</h4>
+    <p>Khalid</p>
+  </div>
+
+  <div class="icon">
+    <span class="material-symbols-outlined">favorite
+    </span>
+  </div>
+
+</div>
+          </li>
+
+          <li>
+            <!-- 4th song -->
+        <div class="recent-song-container">
+
+          <div class="num">04</div>
+          <div class="song-cover"><img src="media/bones.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Bones</h4>
+            <p>Dan Reynolds</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+          </div>
+
+        </div>
+          </li>
+
+          <li>
+            <!-- 5th song -->
+        <div class="recent-song-container">
+
+          <div class="num">05</div>
+          <div class="song-cover"><img src="media/sunflower.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Sunflower</h4>
+            <p>Post Malone</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+          </div>
+
+        </div>
+          </li>
+
+          <li>
+            <!-- 6th song -->
+        <div class="recent-song-container">
+
+          <div class="num">06</div>
+          <div class="song-cover"><img src="media/attention.jpg" alt=""></div>
+
+          <div class="song-name">
+            <h4>Attention</h4>
+            <p>Charlie Puth</p>
+          </div>
+
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite
+            </span>
+          </div>
+
+        </div>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="left-container">
+      <!-- image -->
+      <div class="foot-image">
+        <img src="media/bones.jpg" alt="">
+      </div>
+
+      <!-- song name -->
+      <div class="foot-songName">
+        <h6>Bones by Imagine Dragon</h6>
+        <p>Dan Reynolds</p>
+      </div>
+
+      <!-- favourite icon -->
+      <div class="foot-favIcon">
+        <span class="material-symbols-outlined">block</span>
+        <span class="material-symbols-outlined">favorite</span>
+      </div>
+
+    </div>
+    <div class="middle-container">
+      <div class="music-control">
+        <span class="material-symbols-outlined reduce-icon-size">shuffle</span>
+        <span class="material-symbols-outlined nextPrev reduce-icon-size">skip_previous</span>
+        <span class="material-symbols-outlined increase-icon-size">pause_circle</span>
+        <span class="material-symbols-outlined nextPrev reduce-icon-size">skip_next</span>
+        <span class="material-symbols-outlined reduce-icon-size">repeat</span>
+      </div>
+      <div class="duration-slider">
+        <p>2:01</p>
+
+        <div class="slidecontainer">
+          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+
+        <p>5:40</p>
+
+      </div>
+    </div>
+    <div class="right-container">
+
+      <div><span id="queue_music" class="material-symbols-outlined reduce-icon-size">queue_music</span></div>
+      <div><span id="lyrics" class="material-symbols-outlined reduce-icon-size">lyrics</span></div>
+      <div><span class="material-symbols-outlined reduce-icon-size">speaker</span></div>
+
+      <div class="slidecontainer-volume">
+        <input type="range" min="1" max="30" value="2" class="slider">
+      </div>
+
+      <div><span id="zoom_out_map" class="material-symbols-outlined">zoom_out_map</span></div>
+
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
