@@ -1,0 +1,195 @@
+@media (max-width: 800px) {
+	/* animated favourites text will be hidden for this viewport width*/
+	.viewMore {
+        display: block;
+    }
+
+    aside{
+        display: none;
+    }
+
+    main {
+        width:100%;
+    }
+
+    /* header media query --------------------- */
+    .app-identity img {
+        height:35px;
+        width: 35px;
+    }
+    
+    .app-name {
+        font-size: 15px;  
+    }
+
+    #favourites {
+        font-size: 8px;
+        border: solid 1px #084035;
+        padding: 5px 8px;
+        border-radius: 3px;
+        opacity: 0.9;
+    }
+    /* seARCH BAR */
+    .search-box{
+        height: 20px;
+        width: 25vw;
+        border-radius: 7px;
+    }
+
+    #input {
+        width: 80px;
+        height: 20px;
+    }
+
+    #search-icon:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    /* Profile image */
+    .image {
+    height: 30px;
+    width: 30px;
+}
+
+    /* carousel----------------- */
+    .carousel-container .carousel {
+        width: 25vw;
+    }
+
+    /* section heading ------------------------- */
+    main h2{
+        margin-top:10px;
+        font-size:2vw;
+        text-align: center;
+        border: 0.5px solid var(--MateBlue);
+        padding: 5px 0;
+    }
+
+
+    /* station section ---------- */
+    .station-container {
+        margin-top:20px;
+        margin-left: 14.5vw;
+    }
+
+    /* expandable sidebar style---------------- */
+    .single-song-container .num { 
+        font-size: 1.2vw;
+    }
+
+    .single-song-container img {
+        width: 5vw;
+        height: 5vw;
+        margin-right: 8px;
+    }
+
+    
+    .single-song-container .song-name h4{
+        font-size: 1.5vw;
+    }
+    
+    .single-song-container .song-name p{
+        font-size: 1vw;
+        margin-top: 4px;
+    }
+    
+    .single-song-container .icon {
+        margin-right: 10px;
+    }
+
+    .icon .material-symbols-outlined{
+        font-size: 2vw; 
+    }
+
+    /* footer section */
+
+    /* changing space-between from space-around */
+    footer {
+        justify-content: space-between;
+    }
+
+    /* increase width of left part of footer and adding left margin */
+    footer .left-container {
+        width: 25%;
+        margin-left: 10px;
+    }
+
+    /* removing heart icon */
+    footer .foot-favIcon {
+       display: none;
+    }
+
+    /* changing overflow style to ellipse*/
+    .foot-songName h6 {
+        font-size: 15px;
+        text-overflow:ellipsis;
+    }
+    
+    /* middle part of footer width increase */
+    footer .middle-container {
+        width: 38%; 
+    }
+    
+    /* RIGHT part of footer width increase and right margin added */
+    footer .right-container {
+        
+        width:25%;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width:500px) {
+
+
+    /* footer media query --------------------- */
+    .foot-image img {
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+    }
+    
+    .middle-container .music-control {
+        height: 70%;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* song name and image size change*/
+
+    .foot-image img {
+        height: 45px;
+        width: 45px;
+        margin-right: 10px;
+    }
+
+    .foot-songName h6 {
+        font-size: 10px;
+        text-overflow:ellipsis;
+    }
+
+    footer .foot-songName p{
+        font-size: 7px;
+        margin-top: -10px;
+    }
+
+    /* size adjustment of footer containers */
+    footer .left-container {
+        width: 30%;
+    }
+    
+    footer .middle-container {
+        width: 40%;
+    }
+    
+    footer .right-container {
+        width:25%;
+    }
+
+    /* removing icon from footer */
+    #queue_music, #lyrics, #zoom_out_map {
+        display: none;
+    }
+}
